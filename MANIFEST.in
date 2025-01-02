@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include employee_expense *.css
+recursive-include employee_expense *.csv
+recursive-include employee_expense *.html
+recursive-include employee_expense *.ico
+recursive-include employee_expense *.js
+recursive-include employee_expense *.json
+recursive-include employee_expense *.md
+recursive-include employee_expense *.png
+recursive-include employee_expense *.py
+recursive-include employee_expense *.svg
+recursive-include employee_expense *.txt
+recursive-exclude employee_expense *.pyc
