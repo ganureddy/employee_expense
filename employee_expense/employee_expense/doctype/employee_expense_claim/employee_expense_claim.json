@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{employee_name}-{date}",
+ "creation": "2025-01-02 22:40:00.609954",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "travelling_with_someone",
+  "column_break_9jkjy",
+  "pincode",
+  "date",
+  "section_break_rggrb",
+  "employee_expense_claim_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "travelling_with_someone",
+   "fieldtype": "Check",
+   "label": "Travelling With Someone"
+  },
+  {
+   "fieldname": "column_break_9jkjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Link",
+   "label": "Pincode",
+   "options": "Pincode"
+  },
+  {
+   "fieldname": "employee_expense_claim_details",
+   "fieldtype": "Table",
+   "label": "Employee Expense Claim Details",
+   "options": "Employee Expense Claim Details"
+  },
+  {
+   "fieldname": "section_break_rggrb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-04 16:01:22.173590",
+ "modified_by": "Administrator",
+ "module": "Employee Expense",
+ "name": "Employee Expense Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
