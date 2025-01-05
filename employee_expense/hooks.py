@@ -50,6 +50,21 @@ app_license = "MIT"
 # Generators
 # ----------
 
+fixtures = [
+    {
+        "dt":
+            "Custom Field",
+            "filters":[[
+                "name",
+                "in",
+                {
+                    "Employee-section_break_bbfpj",
+                    "Employee-employee_expense"
+                }
+                ]]
+    }  
+]
+
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
